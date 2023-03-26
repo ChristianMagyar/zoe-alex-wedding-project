@@ -1,0 +1,305 @@
+/* ==== GENERAL STYLES ==== */
+
+* {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, p, img, ul {
+  margin-bottom: 1.6rem;
+}
+
+body {
+  background: url(assets/wedding-landing-background.png) repeat center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #444349;
+}
+
+.three-locations,
+.program,
+.gifts,
+.questions-and-answers,
+.contact {
+  width: 95%;
+  margin: 1.5rem auto;
+  text-align:center;
+  padding: 1rem 1.5rem;
+}
+
+h1,
+h2 {
+  font-family: 'Great Vibes', cursive;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #bd806e;
+}
+
+a:hover {
+  color: #eda087;
+  transition: color .15s ease-in-out;
+}
+
+/* ==== HEADER STYLES ==== */
+
+.cover {
+  background: url(assets/wedding-landing-cover.jpg) no-repeat 70% center;
+  background-size: cover;
+  display: table;
+  text-align: center;
+  height: 100vh;
+  width: 100vw; 
+}
+
+@media (min-width: 768px) {
+  
+  .cover {
+  background: url(assets/wedding-landing-cover.jpg) no-repeat center/cover;
+  }
+  
+}
+
+.main-text-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.main-text {
+  margin: 1rem auto;
+  color: hsla(0,0%,100%,.9);
+  padding: .8rem;
+  background: hsla(100,0%,0%,.5);
+}
+  
+  @media (min-width: 768px) {
+    
+    .main-text {
+     width: 48vw;
+     margin-top: 4.5rem;
+    }
+  
+  }
+
+h1 {
+  font-size: 4rem;
+  color: #d2ba87;
+  margin-top:1rem;
+  margin-bottom:1rem;
+}
+
+.tagline {
+  letter-spacing: .18rem;
+  font-size: 1.35rem;
+}
+    
+    @media (min-width: 768px) {
+      
+      .tagline {
+       text-transform: uppercase; 
+      }
+      
+}
+
+.tagline::after {
+  display: block;
+  content:"";
+  background-color: white;
+  width: 15rem;
+  height: 1px;
+  margin: .7rem auto;
+}
+
+.date {
+  letter-spacing: .125rem;
+  font-size: 1.35rem;
+  vertical-align: middle;
+}
+
+.date::before,
+.date::after {
+ display: inline-block;
+ content: "";
+ background-color: white;
+ width: 2rem;
+ height: 1px;
+ vertical-align: middle;
+ margin: 1rem auto;
+}
+
+/* ==== LOCATION STYLES ==== */
+
+.loc img {
+  height: 8rem;
+}
+
+.loc {
+  font-family: 'Muli', sans-serif;
+}
+
+.loc h3 {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.loc::after {
+  display: block;
+  content: "";
+  background-color: #444349;
+  height: .2rem;
+  width: 10rem;
+  margin: 1.3rem auto;
+}
+
+@media (min-width: 768px) {
+  
+  .loc {
+    display: inline-block;
+    width: 30%;
+    padding: 1.2rem;
+    margin: .5rem;
+    margin-bottom:-1.7rem;
+  }
+  
+  .loc::after {
+    display: none;
+  }
+  
+}
+
+/* ==== PROGRAM STYLES ==== */
+
+.program {
+  width: 100vw;
+  background-color: hsla(100,0%,0%,60%);
+  color: #d2ba87;
+  font-family: 'Muli', sans-serif;
+}
+
+.program h3 {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.program p, ul {
+  text-align: left;
+}
+
+.program p {
+  font-style: oblique;
+}
+
+@media (min-width: 768px) {
+  
+  .program p, ul {
+  margin: 0 auto;
+  width: 23%;
+}
+  
+}
+
+/* ==== GIFTS STYLES ==== */
+
+.gifts img {
+  height: 8rem;
+}
+
+.gifts-last {
+  margin-bottom: 0.1rem;
+}
+
+/* ==== QUESTIONS & ANSWERS STYLES ==== */
+
+.questions-and-answers {
+  width: 100vw;
+  background-color: hsla(100,0%,0%,60%);
+  color: #d2ba87;
+  text-align: center;
+}
+
+.questions-and-answers p {
+  font-family: 'Muli', sans-serif;
+  text-align: left;
+}
+
+.question {
+  font-weight:700;
+  margin-bottom:0.4rem;
+}
+
+.answer {
+  margin-top:.4rem;
+}
+
+.questions-with-answers::after {
+  display: block;
+  content:"";
+  background-color: #d2ba87;
+  width: 50vw;
+  height: 2.5px;
+  margin: 2rem auto;
+}
+  
+  @media (min-width: 768px) {
+    
+    .questions-with-answers {
+      display:inline-block;
+      width:28vw;
+      vertical-align: top;
+      padding: 1rem;
+      margin: 1.5rem;
+      margin-top:.5rem;
+    }
+    
+    .questions-with-answers::after {
+     display:none; 
+    }
+    
+    .questions-and-answers h3 {
+      text-align:left;
+    }
+    
+  }
+
+/* ==== FOOTER STYLES ==== */
+
+footer {
+  display: table;
+  height: 10vh;
+  width: 100%;
+  background-color: #606060;
+  color: #fff;
+  text-align: center;
+  font-size: .85rem;
+  font-family: 'Muli', sans-serif;
+}
+
+.footer-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+.love {
+  color: red;
+}
+
+@media (min-width: 768px) {
+  
+  footer {
+    height:8vh;
+  }
+  
+}
