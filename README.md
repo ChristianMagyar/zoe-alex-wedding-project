@@ -1,1 +1,1 @@
-# zoe-alex-wedding-project
+In this project I am creating a website for Zoe and Anlex. 
